@@ -511,6 +511,7 @@ type PublicEvent struct {
 // The Webhook event name is "pull_request".
 //
 // GitHub API docs: https://developer.github.com/v3/activity/events/types/#pullrequestevent
+// +k8s:deepcopy-gen=true
 type PullRequestEvent struct {
 	// Action is the action that was performed. Possible values are:
 	// "assigned", "unassigned", "review_requested", "review_request_removed", "labeled", "unlabeled",
